@@ -1,9 +1,9 @@
-#include "AdventOfCode.2020.Day1.ReportRepair/report_repair_part_2_optimal.h"
+#include "AdventOfCode.2020.Day1/report_repair_part_2_optimal.h"
 
 #include <optional>
 #include <unordered_set>
 
-namespace AdventOfCode2020::Day1::ReportRepair::Part2::Optimal
+namespace AdventOfCode2020::Day1::Part2::Optimal
 {
   struct Triplet {
     Triplet(int X, int Y, int Z);

@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
 
-#include "AdventOfCode.2020.Day1.ReportRepair/report_repair_part_2_brute_force.h"
+#include "AdventOfCode.2020.Day1/report_repair_part_2_optimal.h"
 
-namespace AdventOfCode2020::Day1::ReportRepair::Part2::BruteForce
+namespace AdventOfCode2020::Day1::Part2::Optimal
 {
-  TEST(AdventOfCode2020_Day1_ReportRepair_Part2_BruteForce_Solve, Found_Multiply) {
+  TEST(AdventOfCode2020_Day1_Part2_Optimal_Solve, Found_Multiply) {
     // Arrange
 
     const std::vector<int> data_set = {
@@ -20,7 +20,7 @@ namespace AdventOfCode2020::Day1::ReportRepair::Part2::BruteForce
     EXPECT_EQ(result, 572);
   }
 
-  TEST(AdventOfCode2020_Day1_ReportRepair_Part2_BruteForce_Solve, NotFound_Error) {
+  TEST(AdventOfCode2020_Day1_Part2_Optimal_Solve, NotFound_Error) {
     // Arrange
 
     const std::vector<int> data_set = {

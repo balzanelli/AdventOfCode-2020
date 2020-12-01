@@ -7,4 +7,4 @@ enable_testing ()
 find_package (GTest)
 
 add_subdirectory (AdventOfCode.2020.Common)
-add_subdirectory (AdventOfCode.2020.Day1.ReportRepair)
+add_subdirectory (AdventOfCode.2020.Day1)

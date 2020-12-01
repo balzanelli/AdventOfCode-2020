@@ -1,12 +1,12 @@
 ﻿#include <iostream>
 
 #include "AdventOfCode.2020.Common/file.h"
-#include "AdventOfCode.2020.Day1.ReportRepair/report_repair_part_1_brute_force.h"
-#include "AdventOfCode.2020.Day1.ReportRepair/report_repair_part_1_optimal.h"
-#include "AdventOfCode.2020.Day1.ReportRepair/report_repair_part_2_brute_force.h"
-#include "AdventOfCode.2020.Day1.ReportRepair/report_repair_part_2_optimal.h"
+#include "AdventOfCode.2020.Day1/report_repair_part_1_brute_force.h"
+#include "AdventOfCode.2020.Day1/report_repair_part_1_optimal.h"
+#include "AdventOfCode.2020.Day1/report_repair_part_2_brute_force.h"
+#include "AdventOfCode.2020.Day1/report_repair_part_2_optimal.h"
 
-using namespace AdventOfCode2020::Day1::ReportRepair;
+using namespace AdventOfCode2020::Day1;
 
 constexpr int kSumTarget = 2020;
 

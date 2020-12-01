@@ -1,9 +1,9 @@
-#include "AdventOfCode.2020.Day1.ReportRepair/report_repair_part_1_optimal.h"
+#include "AdventOfCode.2020.Day1/report_repair_part_1_optimal.h"
 
 #include <optional>
 #include <unordered_set>
 
-namespace AdventOfCode2020::Day1::ReportRepair::Part1::Optimal
+namespace AdventOfCode2020::Day1::Part1::Optimal
 {
   struct Pair {
     Pair(int X, int Y);
