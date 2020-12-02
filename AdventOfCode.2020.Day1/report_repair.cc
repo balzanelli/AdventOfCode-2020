@@ -26,7 +26,7 @@ void SolveProblem2(const std::vector<int>& data_set) {
     Part2::Optimal::Solve(data_set, kSumTarget) << std::endl;
 }
 
-int main(int argc, const char* argv[]) {
+int main(const int argc, const char* argv[]) {
   if (argc != 2) {
     std::cout << "File Must Be Specified" << std::endl;
     return -1;

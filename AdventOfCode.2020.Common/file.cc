@@ -8,8 +8,8 @@ namespace AdventOfCode2020::Common::File
 {
   std::vector<int> ReadAsNumbers(const std::string_view file_name) {
     std::vector<int> items = {};
-    std::string      line = {};
-    std::ifstream    stream(file_name.data());
+    std::string line = {};
+    std::ifstream stream(file_name.data());
 
     if (!stream) {
       std::cout << "Failed To Open File: " << file_name << std::endl;
@@ -27,6 +27,27 @@ namespace AdventOfCode2020::Common::File
       catch (const std::exception& e) {
         std::cout << e.what() << std::endl;
       }
+    }
+
+    return items;
+  }
+
+  std::vector<std::string> ReadAsStrings(const std::string_view file_name) {
+    std::vector<std::string> items = {};
+    std::string line = {};
+    std::ifstream stream(file_name.data());
+
+    if (!stream) {
+      std::cout << "Failed To Open File: " << file_name << std::endl;
+      return {};
+    }
+
+    while (std::getline(stream, line)) {
+      if (line.empty()) {
+        continue;
+      }
+
+      items.push_back(line);
     }
 
     return items;
