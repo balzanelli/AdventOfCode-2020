@@ -2,5 +2,9 @@
 .vs/
 .vscode/
 
+# CLion
+.idea/
+
 # Build
 build/
+cmake-build-*/
