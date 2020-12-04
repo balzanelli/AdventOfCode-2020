@@ -26,11 +26,16 @@ void SolveProblem2(const std::vector<std::string>& data_set) {
 }
 
 int main(int argc, const char* argv[]) {
-  const auto data_set = AdventOfCode2020::Common::File::ReadAsStrings(
-      R"(C:\Users\Admin\source\repos\AdventOfCode.2020\AdventOfCode.2020.Day3\input)");
+  if (argc != 2) {
+    std::cout << "File Must Be Specified" << std::endl;
+    return -1;
+  }
+
+  const auto data_set = AdventOfCode2020::Common::File::ReadAsStrings(argv[1]);
 
   if (data_set.empty()) {
-    std::cout << "Data Set is Empty" << std::endl;
+    std::cout << "Data Set is Empty: " << argv[0] << std::endl;
+    return -1;
   }
 
   SolveProblem1(data_set);
