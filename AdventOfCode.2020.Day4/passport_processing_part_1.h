@@ -6,5 +6,5 @@
 
 namespace AdventOfCode2020::Day4::Part1
 {
-  int Solve(std::string_view file_name);
+  int Solve(std::string_view file_path);
 }

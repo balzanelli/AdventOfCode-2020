@@ -224,11 +224,11 @@ namespace AdventOfCode2020::Day4::Part2
         this->pid.IsValid();
   }
 
-  std::vector<std::string> ReadPassportFile(const std::string_view file_name) {
+  std::vector<std::string> ReadPassportFile(const std::string_view file_path) {
     std::vector<std::string> passports = {};
     std::string current_line = {};
     std::string line = {};
-    std::ifstream stream(file_name.data());
+    std::ifstream stream(file_path.data());
 
     if (!stream) {
       return {};
@@ -318,8 +318,8 @@ namespace AdventOfCode2020::Day4::Part2
     return passports;
   }
 
-  int Solve(const std::string_view file_name) {
-    const auto data_set = ReadPassportFile(file_name);
+  int Solve(const std::string_view file_path) {
+    const auto data_set = ReadPassportFile(file_path);
 
     if (data_set.empty()) {
       return -1;

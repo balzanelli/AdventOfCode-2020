@@ -6,14 +6,14 @@
 
 using namespace AdventOfCode2020::Day4;
 
-void SolveProblem1(const std::string& file_name) {
+void SolveProblem1(const std::string_view file_path) {
   std::cout << "Problem 1: " <<
-    Part1::Solve(file_name) << std::endl;
+    Part1::Solve(file_path) << std::endl;
 }
 
-void SolveProblem2(const std::string& file_name) {
+void SolveProblem2(const std::string_view file_path) {
   std::cout << "Problem 2: " <<
-    Part2::Solve(file_name) << std::endl;
+    Part2::Solve(file_path) << std::endl;
 }
 
 int main(int argc, const char* argv[]) {
@@ -22,14 +22,15 @@ int main(int argc, const char* argv[]) {
     return -1;
   }
 
-  const std::string file_name = argv[1];
+  const std::string file_path = argv[1];
 
-  if (file_name.empty()) {
+  if (file_path.empty()) {
     std::cout << "File Must Be Specified" << std::endl;
+    return -1;
   }
 
-  SolveProblem1(file_name);
-  SolveProblem2(file_name);
+  SolveProblem1(file_path);
+  SolveProblem2(file_path);
 
   return 0;
 }
